@@ -17,7 +17,7 @@ def git_clone_op(repo_url: str):
         name="create pipeline volume",
         resource_name="pipeline-pvc",
         modes=["ReadWriteOnce"],
-        size="3Gi"
+        size="20Gi"
     )
 
     op = dsl.ContainerOp(
